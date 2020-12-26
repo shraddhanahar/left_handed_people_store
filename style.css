@@ -1,0 +1,18 @@
+.menu-icon,.photo{
+    height :30px;
+}
+.photo{
+    outline-color:bg-dark;
+}
+.leftside{
+   font-variant:initial;;
+    font-family: 'Roboto', sans-serif;
+}
+.leftside1{   
+    
+    font-family: 'Roboto', sans-serif;
+}
+.picture{
+    height:550px;
+    width:800px;
+}
