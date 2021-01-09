@@ -1,0 +1,125 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+<script>
+function validateForm()
+{
+if (document.myForm.uname.value==null || document.myForm.uname.value=="")
+{
+alert("UserName must not be empty");
+document.myForm.uname.focus() ;
+return false;
+}
+if( document.myForm.password.value == "" ||
+isNaN( document.myForm.password.value ) ||
+document.myForm.password.value.length != 8)
+{
+alert( "password must be of 8 characters" );
+document.myForm.password.focus() ;
+return false;
+}
+return( true );
+}
+</script>
+</head>
+<style>
+body{
+background-color:rgba(250, 250, 87, 0.918);
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display:block;
+  color:Grey;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+
+a{
+  text-align:right;
+  background-colorrgba(250, 250, 87, 0.918);
+  font-size:25px;
+}
+
+
+
+input[type=text] {
+  margin: 8px 80px 0 0;
+  font-size:20px;
+}
+
+input[type=password] {
+  margin: 10px 88px 0 0;
+  font-size:20px;
+}
+
+input[type=submit] {
+  margin: 10px 0 0 0;
+  font-size:14px;
+}
+
+input[type=reset] {
+  margin: 10px 0 0 0;
+  font-size:14px;
+}
+
+form {
+    margin-left: 35%;
+    margin-right:15%;
+    width: 70%;
+}
+
+
+</style>
+<body>
+
+
+<br>
+
+<form name="myForm" onsubmit="return validateForm()" method="post">
+<table>
+<tr>
+<td> User name:</td>
+<td><input type="text" placeholder="Enter your username" name="uname"> </td>
+</tr>
+<tr>
+<td>password:</td>
+<td><input type="password"  placeholder="Enter your password" name="password" /></td>
+</tr>
+<tr>
+    <td><div>
+      <input type="checkbox" id="dropdownCheck">
+      <label for="dropdownCheck">
+       Remember me
+      </label></td>
+    </div></tr>
+<br>
+<br>
+
+<tr>
+<td><button class="btn btn-dark mb-1" type="submit">Sign In</button></td>
+  <br>
+</tr>
+<br>
+
+ <tr>
+
+<td> <a text-decoration:none" class="text dark" href="Sign up.html">Sign up</a></td>
+
+<br>
+
+<td><a text-decoration:none" class="text-dark" href="#">Forgot password?</a></td>
+
+
+</tr>
+
+
+</table>
+</form>
+</body>
+</html>

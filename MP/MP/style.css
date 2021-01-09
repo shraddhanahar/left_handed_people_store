@@ -16,7 +16,19 @@
     height:550px;
     width:800px;
 }
-
 .whatsapp{
     height :45px;
 }
+
+.search-icon,
+.voice-search-icon {
+	height: 35px;
+}
+
+.search-box {
+	border-radius: 30px;
+}
+.search-bar {
+	outline: none;
+}
+
